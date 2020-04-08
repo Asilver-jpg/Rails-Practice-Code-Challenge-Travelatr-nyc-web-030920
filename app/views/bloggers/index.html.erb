@@ -1,0 +1,9 @@
+<h1>Bloggers:</h1>
+
+<ul>
+    <%@bloggers.each do  |blogger|%>
+        <div class= "link">
+            </li><%= link_to blogger.name, blogger_path(blogger)%> </li>
+        </div>
+    <%end%>
+</ul>
